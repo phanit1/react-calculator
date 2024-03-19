@@ -4,6 +4,7 @@ import SimpleCalculator from './components/SimpleCalculator';
 import ScientificCalculator from './components/ScientificCalculator';
 import EmiCalculator from './components/EmiCalculator';
 import FuelCalculator from './components/FuelCalculator';
+import MileageCalculator from './components/MileageCalculator';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <option value="bmi">BMI Calculator</option>
         <option value="fuel">Fuel Calculator</option>
         <option value="age">Age Calculator</option>
+        <option value="mileage">Mileage Calculator</option>
       </select>
 
       {selectedOption === 'simple' && <div><SimpleCalculator /></div>}
@@ -32,6 +34,7 @@ function App() {
       {selectedOption === 'bmi' && <div>Content for BMI Calculator</div>}
       {selectedOption === 'fuel' && <div><FuelCalculator /></div>}
       {selectedOption === 'age' && <div>Content for Age Calculator</div>}
+      {selectedOption === 'mileage' && <div><MileageCalculator /></div>}
 
     </div>
   );
